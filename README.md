@@ -21,7 +21,7 @@ experiments were performed using Python 3.8
 
 `python -m venv venv/`
 
-`source env/bin/activate` 
+`source venv/bin/activate` 
 
 `pip install -r requirements.txt`
 
