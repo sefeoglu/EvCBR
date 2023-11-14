@@ -1,3 +1,9 @@
+# pkl, ttl, dict, txt
+*.pkl
+*.ttl
+*.dict
+*.txt
+*.nt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
