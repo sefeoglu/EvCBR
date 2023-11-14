@@ -1,6 +1,6 @@
 import rdflib
 from rdflib import URIRef
-from utils import *
+from experiments.utils import *
 import os
 import math
 import time

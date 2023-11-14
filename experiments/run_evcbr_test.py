@@ -228,8 +228,8 @@ def enhance_kg_connections_to_superclasses(kg, expansion_rels: List[URIRef]):
         kg.add(nt)
 
 def main(args):
-
-    pp_dir = (DATA_DIR / args.evcbr_pp_data_dir).resolve()
+    print(args)
+    pp_dir = (DATA_DIR / args.pp_data_dir).resolve()
     testdata_dir = (DATA_DIR / args.pp_data_dir).resolve()
     save_dir = (DATA_DIR / args.save_dir).resolve()
     if not os.path.isdir(save_dir):
@@ -237,7 +237,7 @@ def main(args):
 
     # %%
     main_kg = Graph()
-
+    print(testdata_dir)
     # load the graph based on training triples
     with open((testdata_dir / "train.txt").resolve(), "r") as f:
         for line in f:
@@ -381,7 +381,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pp_data_dir", type=str, default="evcbr_pp_wn18rr")
+    parser.add_argument("--pp_data_dir", type=str, default="pp_wn18rr")
     parser.add_argument("--evcbr_pp_data_dir", type=str, default="pp_wn18rr")
     parser.add_argument("--save_dir", type=str, default="eval_res_wn18rr")
     parser.add_argument("--processes", type=int, default=1)

@@ -2,7 +2,7 @@ import pickle
 from rdflib import URIRef
 import numpy as np
 from collections import defaultdict
-from utils import *
+from experiments.utils import *
 import argparse
 import rdflib
 
