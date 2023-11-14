@@ -3,7 +3,7 @@ sparqlwrapper
 numpy
 networkx
 scipy
-sklearn
+scikit-learn
 requests
 flask
 ortools
